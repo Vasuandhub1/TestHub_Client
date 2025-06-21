@@ -55,7 +55,7 @@ export function ForgotPasswordEmail() {
   const handleButton = async()=>{
     try{
         
-        await axios.post(`${Base_Url}/test-hub/ResetPassword`,{Email:Email,url:"http://localhost:5173/ResetPassword"})
+        await axios.post(`${Base_Url}/test-hub/ResetPassword`,{Email:Email,url:"https://test-hub-client.vercel.app/ResetPassword"})
 
         toast({title:"Reset Password",description:"Reset Password token send on provided email Account"})
     }catch(err){

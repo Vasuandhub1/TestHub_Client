@@ -53,7 +53,7 @@ export function RegisterCard() {
         userEmail: data.email,
         userPassword: data.password,
         role,
-        url: "http://localhost:5173/verify",
+        url: "https://test-hub-client.vercel.app/verify",
       };
       const dat = await axios.post(`${Base_Url}/test-hub/User`, req);
       console.log(dat, "data");
