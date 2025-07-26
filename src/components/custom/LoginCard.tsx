@@ -73,7 +73,7 @@ export function LoginCard() {
       } else if (resData === "FacultyCreate") {
         toast({ title: "Success", description: "Welcome Faculty! Please complete your personal details." });
         navigate("/FacultyRegister");
-      } else if (resData?.role === "teacher") {
+      } else if (resData?.role === "faculty") {
         dispatch(setFaculty(resData));
         toast({ title: "Success", description: `Welcome ${resData.name}` });
         navigate("/FacultyHome");
